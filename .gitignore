@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Libros: no se suben al repositorio (derechos de autor)
+libros/
+
+# Blender: copias de respaldo automáticas
+*.blend1
+*.blend2
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
