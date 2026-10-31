@@ -73,6 +73,7 @@ Observaciones de Claude sobre la planta:
 1. **Hover y crucero tienen que coincidir en el centro de gravedad.** En hover, el centro de gravedad tiene que caer en el centro de las 4 góndolas; en crucero, un poco por delante del punto neutro (que depende del ala y de la cola). En el boceto, el centro de las góndolas cae más o menos sobre el ala: es lo que hace falta. Se verifica con números en la etapa de geometría.
 2. **Discos de los rotores fuera del ala, vistos desde arriba.** Si un disco tapa el ala, su estela la golpea en hover (descarga). Conviene que los brazos alejen los discos del borde de ataque y del borde de fuga.
 3. **Propuesta: una viga por lado en vez de 4 brazos.** En el boceto, la góndola delantera y la trasera de cada lado quedan casi alineadas. Una viga (boom) por lado, por debajo del ala, que lleve la góndola delantera en una punta y la trasera en la otra, reemplaza 4 brazos sueltos por 2 vigas que se apoyan en el larguero del ala. Menos piezas, más rígido (importante contra el *whirl flutter*) y las cargas van directo al ala. Las góndolas quedan en el mismo lugar del boceto. **Aprobado por Julian** el 31/10/2026.
+4. **Forma del ala:** en el boceto se ve con flecha y curva hacia atrás. `PENDIENTE` confirmar si es intencional.
 5. **Altura de las góndolas traseras respecto de las delanteras** (pregunta de Julian, 31/10/2026). En hover puro casi no importa: los discos no se superponen vistos desde arriba y el empuje vertical no genera momento por la altura. Importa en transición y en crucero:
    - **Transición:** con velocidad hacia adelante, la estela de los rotores delanteros se inclina hacia atrás y hacia abajo. Si los traseros están más altos, quedan por encima de esa estela y no la tragan.
    - **Crucero:** con las góndolas basculadas, el chorro de cada hélice delantera sale derecho hacia atrás. Si la trasera está a la misma altura, trabaja dentro de ese chorro: menos rendimiento, más vibración y ruido. Cualquier desnivel ayuda. Además, detrás del ala el aire baja (estela del ala): más altos, los traseros quedan por encima.
@@ -80,7 +81,6 @@ Observaciones de Claude sobre la planta:
    - **Estructura y suelo:** más altos, necesitan un soporte (pilón) sobre la viga, que pesa y es menos rígido; más bajos, quedan cerca del suelo y de la gente.
    - **Propuesta de Claude:** traseros más altos que los delanteros, sobre un pilón en la punta trasera de cada viga. Cuánto más altos se estudia con DUST (interacción entre rotores) y VSPAERO. `PENDIENTE` de decisión.
 6. **Cola:** el estabilizador horizontal que une las dos derivas tiene perfil aerodinámico (Julian, 31/10/2026). Es una superficie sustentadora que da la estabilidad en cabeceo; se dimensiona con el ala en la etapa de geometría. Vigilar que no quede dentro del chorro de las góndolas traseras en crucero.
-4. **Forma del ala:** en el boceto se ve con flecha y curva hacia atrás. `PENDIENTE` confirmar si es intencional.
 
 Arquitecturas a comparar en el sizing:
 
