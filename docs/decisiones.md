@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: recarga en cada escala
+
+- **Decisión:** el eVTOL se recarga en cada escala. Misión de diseño: el tramo más largo, La Plata → Puerto Madero (≈ 51 km en línea recta), más 20 min de reserva.
+- **Por qué:** elección de Julian; evita dimensionar la batería para la ruta completa con 4 despegues y aterrizajes.
+- **Pendiente:** ruta frente a Aeroparque (Claude recomienda operar coordinando con el control, no rodear por el oeste), salida de emergencia, unión de las vigas solo al ala.
+
 ## 31/10/2026: trayecto, reserva y puerta
 
 - **Decisión:** misión en el área metropolitana de Buenos Aires: Puerto Madero → Tigre, o la ruta La Plata → Puerto Madero → Tigre → Pilar. Reserva de 20 min como mínimo. Una sola puerta tipo puerta-escalera, con bisagra abajo.

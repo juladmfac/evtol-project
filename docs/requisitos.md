@@ -25,16 +25,18 @@ Los tiempos son solo de crucero: no incluyen despegue, transición, ascenso, des
 
 ### Misión de diseño
 
-`PENDIENTE`: ¿se recarga en cada escala?
-
-- **Con recarga en cada escala:** la batería se dimensiona para el tramo más largo (La Plata → Puerto Madero, ≈ 51 km) más la reserva.
-- **Sin recarga:** la batería se dimensiona para la ruta completa (≈ 110 km), con 4 despegues y 4 aterrizajes verticales (el hover es la fase que más energía consume), más la reserva.
-
-Propuesta de Claude: el sizing calcula las dos y se decide con los números.
+**Decisión (Julian, 31/10/2026): se recarga en cada escala.** La misión de diseño es el tramo más largo, **La Plata → Puerto Madero (≈ 51 km)**, más la reserva de 20 min. La distancia real depende de la ruta (ver nota operativa).
 
 ### Nota operativa
 
-Aeroparque Jorge Newbery queda entre Puerto Madero y Tigre, sobre la costa: el tramo atraviesa espacio aéreo controlado. No afecta al sizing, pero sí a la altura y la ruta reales.
+Aeroparque Jorge Newbery queda entre Puerto Madero y Tigre, sobre la costa: el tramo atraviesa su zona de control. Julian preguntó si conviene rodearlo por el oeste. Análisis de Claude:
+
+- **Rodear por el oeste** obliga a sobrevolar la ciudad densa: más gente expuesta al ruido y menos lugares para un aterrizaje de emergencia. Además, la zona de control de Aeroparque es amplia y el desvío probablemente siga dentro de ella.
+- **Lo habitual** es no esquivar el espacio controlado sino operar dentro de él, coordinando con el control de tránsito aéreo, como hacen hoy los helicópteros en Buenos Aires por rutas establecidas. Verificar las rutas VFR y de helicópteros del área en la AIP de Argentina (publicación de información aeronáutica).
+- **Requisito que se deriva:** al ser autónomo, el eVTOL tiene que poder comunicarse con el control de tránsito aéreo y seguir sus instrucciones.
+- **Para el sizing:** la distancia de cada tramo se toma como la línea recta multiplicada por un factor de desvío, que es un parámetro `SUPUESTO` hasta conocer la ruta real.
+
+`PENDIENTE` de decisión de Julian.
 
 ### Nota regulatoria sobre la autonomía
 
@@ -72,7 +74,8 @@ Implicancias a resolver en la geometría:
 - **Largo de cabina:** dos filas enfrentadas necesitan espacio para las piernas entre ellas. Medidas de asientos, pasillos y espacio para piernas: tomarlas de Roskam, Parte III (diseño de cabina y fuselaje) o de Raymer, no suponerlas.
 - **Centro de gravedad:** la cabina conviene centrada bajo el ala, que es donde cae el centro de gravedad. Así, volar con 1 o con 4 pasajeros lo mueve poco.
 - **Puerta:** una sola, a un costado, bajo el ala, entre las góndolas delanteras y traseras. Se abre de arriba hacia abajo, con la bisagra abajo, como una puerta-escalera (*airstair*) de avión ejecutivo: abierta, sirve de escalón (Julian, 31/10/2026). Vista lateral: [`bocetos/2026-10-31-vista-lateral.png`](bocetos/2026-10-31-vista-lateral.png).
-  - `PENDIENTE` verificar en la normativa (SC-VTOL) si con 4 pasajeros alcanza una sola puerta o hace falta una salida de emergencia adicional.
+  - Normativa (consultada el 31/10/2026): EASA SC-VTOL, punto VTOL.2315 "Means of egress and emergency exits", basado en CS-23.2315. Es un requisito por objetivos: la aeronave tiene que permitir una evacuación rápida y segura después de un aterrizaje de emergencia, con salidas fáciles de encontrar y de abrir desde adentro y desde afuera, y acceso fácil a las salidas de emergencia si las hay. Si lleva sistema de flotación, las salidas tienen que quedar sobre el agua. No se encontró una cantidad fija de salidas en lo consultado: la define el medio de cumplimiento (MOC). El texto completo no se pudo leer desde la sesión. `PENDIENTE` leer el texto vigente y su MOC.
+  - Recomendación de Claude: prever una **salida de emergencia en el lado opuesto** a la puerta principal. Si la aeronave queda apoyada sobre el lado de la puerta, o hay fuego de ese lado, los pasajeros necesitan otra salida. Además, la ruta pasa sobre el río: conviene prever flotación y salidas sobre la línea de agua.
   - Los escalones de la puerta abierta tienen que quedar lejos de los discos de las góndolas.
 
 Historial, todo del 31/10/2026: dos cabinas con 6 asientos (4 adelante en 2 bancos enfrentados, 2 atrás de "clase alta") → 2 pasajeros → 4 pasajeros.
