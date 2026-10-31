@@ -70,7 +70,7 @@ Fuente candidata para las duraciones de hover y transición: la misión de refer
 
 ## Configuración candidata
 
-Fuselaje + ala alta + cola en V + rotores basculantes, 4 rotores en primera instancia y probablemente 6 o más. Reemplaza al ala volante triangular. Análisis y riesgos en `docs/configuracion.md`.
+Fuselaje + ala alta + cola en V + 4 rotores basculantes + 2 hélices propulsoras fijas en la parte trasera del fuselaje. Julian anticipa 6 o más rotores por norma. Reemplaza al ala volante triangular. Análisis y riesgos en `docs/configuracion.md`.
 
 ## Prototipo a escala
 

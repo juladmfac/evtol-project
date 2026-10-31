@@ -9,8 +9,38 @@ Lectura de Claude del boceto (`PENDIENTE` que Julian la confirme):
 - **Fuselaje convencional** con nariz redondeada y ventanas, para 2 pasajeros.
 - **Ala alta**, recta, montada sobre el fuselaje.
 - **Cola en V** arriba de la parte trasera.
-- **4 rotores en góndolas sobre brazos**, dibujados en posición de hover: un par alto, a la altura del ala, y un par bajo, en brazos que salen de la parte inferior del fuselaje. Los de adelante y los de atrás quedan a distinta altura. Julian anticipa que la norma lo lleve a 6 o más.
-- **Rotores basculantes**: `PENDIENTE` si basculan los 4 o solo algunos.
+- **4 rotores basculantes en góndolas sobre brazos**, dibujados en posición de hover: un par alto, a la altura del ala, y un par bajo, en brazos que salen de la parte inferior del fuselaje. Los de adelante y los de atrás quedan a distinta altura. Basculan los 4 (confirmado por Julian, 31/10/2026). Julian anticipa que la norma lo lleve a 6 o más.
+- **2 hélices propulsoras fijas** en la parte trasera del fuselaje, al pie de la cola en V, que solo empujan hacia adelante (Julian, 31/10/2026). Ubicación marcada en [`bocetos/2026-10-31-ubicacion-helices-propulsoras.png`](bocetos/2026-10-31-ubicacion-helices-propulsoras.png).
+
+### Hélices propulsoras traseras: análisis de Claude
+
+Es una disposición posible y usada: varios eVTOL de sustentación + crucero llevan una hélice propulsora atrás, como el Wisk Cora o el Aurora PAV de Boeing.
+
+**Aportan**
+
+- **Transición:** empujan hacia adelante mientras los rotores siguen verticales, y la aeronave gana velocidad sin depender solo de bascular.
+- **Crucero:** una hélice diseñada solo para crucero puede rendir más que un rotor basculante, que es un compromiso entre hover y crucero.
+- **Redundancia en crucero:** si falla un rotor basculante en crucero, queda empuje.
+
+**No resuelven**
+
+- **La falla de un rotor en hover.** En hover las propulsoras no sostienen nada: sostienen solo los 4 rotores basculantes, así que el problema de perder 1 de 4 sigue igual.
+
+**Riesgos**
+
+1. **Dos sistemas para la misma función.** Si los 4 rotores basculan para crucero y además están las propulsoras, se carga con el peso del mecanismo de basculación y el de las propulsoras, y ambos empujan en crucero. Hay que justificar con números que la suma conviene.
+2. **Flujo perturbado.** Una hélice propulsora trabaja en la estela del fuselaje y cerca de la cola en V: más ruido y vibración, y la cola puede quedar en el chorro de la hélice o afectarla.
+3. **Centro de gravedad hacia atrás.** Motores y hélices en la cola mueven el centro de gravedad hacia atrás; hay que compensar con la ubicación de las baterías.
+4. **Espacio libre.** Diámetro de las hélices contra el suelo y contra la cola en V.
+
+### Arquitecturas a comparar
+
+| Variante | Hover | Crucero | Comentario |
+| --- | --- | --- | --- |
+| T4+P2 | 4 rotores basculantes | 4 basculantes + 2 propulsoras | Configuración actual de Julian |
+| T6 | 6 rotores basculantes | 6 basculantes | Sin propulsoras; mejor tolerancia a falla en hover |
+| L+P2 | 4, 6 u 8 rotores **fijos** de sustentación | 2 propulsoras | Sin mecanismo de basculación; los rotores fijos quedan detenidos y hacen resistencia en crucero |
+| T6+P2 | 6 rotores basculantes | 6 basculantes + 2 propulsoras | Tolerancia a falla en hover y propulsoras para transición |
 
 ### Opinión de Claude
 
@@ -33,21 +63,15 @@ Hipótesis cualitativas; el sizing y la geometría las confirman o las descartan
 
 ### Propuesta de comparación
 
-Ya no hace falta una "referencia convencional": esta configuración lo es. Se comparan variantes de la misma configuración:
+Ya no hace falta una "referencia convencional": esta configuración lo es. Se comparan las arquitecturas de la tabla anterior (`PENDIENTE` de aprobación de Julian):
 
-| Variante | Rotores | Qué bascula |
-| --- | --- | --- |
-| C-4 | 4 | `PENDIENTE` |
-| C-6 | 6 | `PENDIENTE` |
-| C-8 | 8 | `PENDIENTE` |
-
-| Criterio | C-4 | C-6 | C-8 | Fuente |
-| --- | --- | --- | --- | --- |
-| Peso máximo de despegue | | | | sizing |
-| Potencia en hover, normal y con un rotor caído | | | | sizing |
-| L/D en crucero | | | | VSPAERO / CFD |
-| Energía de batería | | | | sizing |
-| Rango de centro de gravedad | | | | geometría |
+| Criterio | T4+P2 | T6 | L+P2 | T6+P2 | Fuente |
+| --- | --- | --- | --- | --- | --- |
+| Peso máximo de despegue | | | | | sizing |
+| Potencia en hover, normal y con un rotor caído | | | | | sizing |
+| L/D en crucero | | | | | VSPAERO / CFD |
+| Energía de batería | | | | | sizing |
+| Rango de centro de gravedad | | | | | geometría |
 
 ## Configuración descartada: ala volante / BWB triangular
 
@@ -61,4 +85,4 @@ Preferencia inicial de Julian (31/10/2026), inspirada en el Airbus ZEROe de ala 
 
 ## Decisión
 
-`PENDIENTE`: configuración preferida, fuselaje + ala alta + cola en V + rotores basculantes. Falta definir la cantidad y el reparto de rotores.
+`PENDIENTE`: configuración preferida, fuselaje + ala alta + cola en V + 4 rotores basculantes + 2 hélices propulsoras fijas atrás. Falta decidir la arquitectura final con el sizing.

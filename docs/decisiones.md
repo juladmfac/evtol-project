@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: rotores basculantes y hélices propulsoras
+
+- **Decisión:** basculan los 4 rotores. Se agregan 2 hélices propulsoras fijas en la parte trasera del fuselaje, al pie de la cola en V, que solo empujan hacia adelante.
+- **Por qué:** idea de Julian.
+- **Pendiente:** las propulsoras no aportan en hover, así que no resuelven la falla de un rotor en hover. Claude propone comparar cuatro arquitecturas en el sizing (T4+P2, T6, L+P2, T6+P2). Ver `docs/configuracion.md`.
+
 ## 31/10/2026: nueva configuración y 2 pasajeros
 
 - **Decisión:** se descarta el ala volante triangular. Nueva configuración: fuselaje + ala alta + cola en V + rotores basculantes, 4 rotores en primera instancia, probablemente 6 o más por norma. Transporta 2 pasajeros.
