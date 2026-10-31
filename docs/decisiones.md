@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: una viga por lado
+
+- **Decisión:** las góndolas delantera y trasera de cada lado van montadas en una viga por lado, por debajo del ala, en lugar de 4 brazos.
+- **Por qué:** menos piezas, más rigidez contra la vibración de las góndolas y las cargas pasan directo al larguero del ala.
+- **Pendiente:** altura de las góndolas traseras respecto de las delanteras; Claude propone traseras más altas (ver `docs/configuracion.md`).
+
 ## 31/10/2026: vista en planta y cola tipo S-97
 
 - **Decisión:** se adopta la cola tipo S-97 con una sola propulsora en el eje. Se mantiene el ala. 4 góndolas basculantes coaxiales: 2 delante del ala en brazos desde la nariz, 2 detrás del ala en brazos desde el fuselaje. Boceto en `docs/bocetos/2026-10-31-vista-en-planta.png`.
