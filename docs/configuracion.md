@@ -6,7 +6,7 @@ Boceto de Julian: [`bocetos/2026-10-31-fuselaje-ala-alta-cola-v.jpg`](bocetos/20
 
 Lectura de Claude del boceto (`PENDIENTE` que Julian la confirme):
 
-- **Fuselaje convencional** con nariz redondeada y ventanas, para 2 pasajeros.
+- **Fuselaje convencional** con nariz redondeada y ventanas, ensanchado para 4 pasajeros (antes 2).
 - **Ala alta**, recta, montada sobre el fuselaje.
 - **Cola en V** arriba de la parte trasera.
 - **4 rotores basculantes en góndolas sobre brazos**, dibujados en posición de hover: un par alto, a la altura del ala, y un par bajo, en brazos que salen de la parte inferior del fuselaje. Los de adelante y los de atrás quedan a distinta altura. Basculan los 4 (confirmado por Julian, 31/10/2026). Julian anticipa que la norma lo lleve a 6 o más.
@@ -32,6 +32,18 @@ Es una disposición posible y usada: varios eVTOL de sustentación + crucero lle
 2. **Flujo perturbado.** Una hélice propulsora trabaja en la estela del fuselaje y cerca de la cola en V: más ruido y vibración, y la cola puede quedar en el chorro de la hélice o afectarla.
 3. **Centro de gravedad hacia atrás.** Motores y hélices en la cola mueven el centro de gravedad hacia atrás; hay que compensar con la ubicación de las baterías.
 4. **Espacio libre.** Diámetro de las hélices contra el suelo y contra la cola en V.
+
+### Tolerancia a la falla de un rotor en hover
+
+Julian (31/10/2026): integrar 6 rotores basculantes en el ala es muy complejo; prefiere mantener 4 basculantes + 2 propulsoras y ensanchar el fuselaje para 4 pasajeros. Boceto de detalle: [`bocetos/2026-10-31-detalle-gondola.jpg`](bocetos/2026-10-31-detalle-gondola.jpg) (`PENDIENTE` que Julian explique qué muestra).
+
+Con 4 posiciones de rotor, el problema de perder uno en hover sigue abierto. Opciones de Claude que no obligan a meter más rotores en el ala:
+
+| Opción | Qué es | A favor | En contra |
+| --- | --- | --- | --- |
+| Coaxiales | Dos rotores superpuestos, girando en sentidos opuestos, en cada una de las 4 góndolas: 8 rotores en 4 posiciones | Si falla uno, el otro de la misma góndola sigue empujando; no hay que agregar góndolas | El rotor de abajo trabaja en la estela del de arriba y rinde menos; góndola más pesada y compleja. Leishman trata el rendimiento de rotores coaxiales `[cita sin verificar]` |
+| Motores redundantes | Cada rotor movido por dos motores, o por un motor con bobinados independientes | Cubre la falla del motor o de su electrónica, que son las más probables | No cubre la rotura de una pala ni la falla del mecanismo de basculación |
+| 2 rotores en la cola | 4 en el ala + 2 en las puntas de la cola en V: 6 posiciones sin agregar nada al ala | La cola en V ya existe y queda lejos del centro de gravedad, buen brazo para controlar | La cola tiene que soportar las góndolas; la disposición del Joby S4 es parecida (verificar) |
 
 ### Arquitecturas a comparar
 

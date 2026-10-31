@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: 4 pasajeros y fuselaje más ancho
+
+- **Decisión:** se mantienen 4 rotores basculantes + 2 propulsoras. Se ensancha el fuselaje para llevar 4 pasajeros en vez de 2.
+- **Por qué:** según Julian, integrar 6 rotores basculantes en el ala es muy complejo; y si la aeronave lleva igual 6 hélices, conviene que transporte más gente.
+- **Pendiente:** cómo resolver la falla de un rotor en hover con 4 posiciones (coaxiales, motores redundantes o 2 rotores en la cola en V; ver `docs/configuracion.md`). Distribución de los 4 asientos.
+
 ## 31/10/2026: rotores basculantes y hélices propulsoras
 
 - **Decisión:** basculan los 4 rotores. Se agregan 2 hélices propulsoras fijas en la parte trasera del fuselaje, al pie de la cola en V, que solo empujan hacia adelante.

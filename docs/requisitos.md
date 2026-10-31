@@ -19,8 +19,8 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 
 | Requisito | Valor | Justificación | Fuente |
 | --- | --- | --- | --- |
-| Pasajeros | 2 | Aeronave más chica y con menos carga | Julian, 31/10/2026 (reemplaza 2–4 y la cabina de 6 asientos) |
-| Masa total | `PENDIENTE`: los 3000–3500 kg se fijaron para 2–4 pasajeros y ya no aplican. Propuesta de Claude: que el peso máximo de despegue salga del sizing | | Julian, 31/10/2026 |
+| Pasajeros | 4, en un fuselaje más ancho | Si la aeronave lleva igual 4 rotores basculantes + 2 propulsoras, conviene que transporte más gente | Julian, 31/10/2026 (reemplaza los 2 pasajeros) |
+| Masa total | `PENDIENTE`. Propuesta de Claude: que el peso máximo de despegue salga del sizing | Los 3000–3500 kg iniciales se fijaron para 2–4 pasajeros; usarlos solo como referencia de control | Julian, 31/10/2026 |
 | Carga útil | `PENDIENTE` (pasajeros + equipaje + equipamiento) | Se divide más adelante | Julian, 31/10/2026 |
 | Alcance | `PENDIENTE` | Sale del trayecto elegido | — |
 | Reserva de energía | `PENDIENTE`: propuesta de 20 min, ver abajo | Criterio regulatorio | FAA / EASA, ver abajo |
@@ -37,9 +37,9 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 
 ## Cabina
 
-Sin cabina de tripulación. 2 pasajeros (Julian, 31/10/2026). Distribución de los asientos `PENDIENTE`.
+Sin cabina de tripulación. 4 pasajeros en un fuselaje ensanchado (Julian, 31/10/2026). Distribución de los asientos `PENDIENTE`.
 
-Historial: la primera propuesta tenía dos cabinas con 6 asientos (4 adelante en 2 bancos enfrentados, 2 atrás de "clase alta"). Se reemplazó por la de 2 pasajeros.
+Historial, todo del 31/10/2026: dos cabinas con 6 asientos (4 adelante en 2 bancos enfrentados, 2 atrás de "clase alta") → 2 pasajeros → 4 pasajeros.
 
 ## Perfil de misión
 
