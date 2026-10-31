@@ -66,6 +66,8 @@ En contra:
 4. **Seguridad en tierra:** una hélice girando en la cola, a la altura de una persona que camina detrás. En una aeronave sin piloto, hay que proteger esa zona.
 5. **Una hélice más para cargar** cuando las góndolas basculantes ya empujan en crucero. El sizing tiene que mostrar que su peso se paga.
 
+Disposición de rotores dibujada por Julian sobre la foto del S-97: [`bocetos/2026-10-31-disposicion-rotores-sobre-s97.png`](bocetos/2026-10-31-disposicion-rotores-sobre-s97.png). 4 góndolas basculantes coaxiales en brazos que salen del fuselaje, un par adelante y un par atrás, y la propulsora en la cola. `PENDIENTE`: en la foto se ven 5 marcas de rotor; confirmar cuál es cuál, si se mantiene el ala alta y hacer una vista en planta.
+
 Arquitecturas a comparar en el sizing:
 
 | Variante | Hover | Baja velocidad y transición | Crucero |
