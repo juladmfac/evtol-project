@@ -66,7 +66,14 @@ En contra:
 4. **Seguridad en tierra:** una hélice girando en la cola, a la altura de una persona que camina detrás. En una aeronave sin piloto, hay que proteger esa zona.
 5. **Una hélice más para cargar** cuando las góndolas basculantes ya empujan en crucero. El sizing tiene que mostrar que su peso se paga.
 
-Disposición de rotores dibujada por Julian sobre la foto del S-97: [`bocetos/2026-10-31-disposicion-rotores-sobre-s97.png`](bocetos/2026-10-31-disposicion-rotores-sobre-s97.png). 4 góndolas basculantes coaxiales en brazos que salen del fuselaje, un par adelante y un par atrás, y la propulsora en la cola. `PENDIENTE`: en la foto se ven 5 marcas de rotor; confirmar cuál es cuál, si se mantiene el ala alta y hacer una vista en planta.
+Disposición de rotores dibujada por Julian sobre la foto del S-97: [`bocetos/2026-10-31-disposicion-rotores-sobre-s97.png`](bocetos/2026-10-31-disposicion-rotores-sobre-s97.png). 4 góndolas basculantes coaxiales en brazos que salen del fuselaje, un par adelante y un par atrás, y la propulsora en la cola. Vista en planta de Julian: [`bocetos/2026-10-31-vista-en-planta.png`](bocetos/2026-10-31-vista-en-planta.png). **Se mantiene el ala.** 2 góndolas delanteras en brazos que salen de la nariz, por delante del ala; 2 traseras en brazos que salen del fuselaje, detrás del ala; la propulsora al final de la cola. Las góndolas quedan dentro de la envergadura.
+
+Observaciones de Claude sobre la planta:
+
+1. **Hover y crucero tienen que coincidir en el centro de gravedad.** En hover, el centro de gravedad tiene que caer en el centro de las 4 góndolas; en crucero, un poco por delante del punto neutro (que depende del ala y de la cola). En el boceto, el centro de las góndolas cae más o menos sobre el ala: es lo que hace falta. Se verifica con números en la etapa de geometría.
+2. **Discos de los rotores fuera del ala, vistos desde arriba.** Si un disco tapa el ala, su estela la golpea en hover (descarga). Conviene que los brazos alejen los discos del borde de ataque y del borde de fuga.
+3. **Propuesta: una viga por lado en vez de 4 brazos.** En el boceto, la góndola delantera y la trasera de cada lado quedan casi alineadas. Una viga (boom) por lado, por debajo del ala, que lleve la góndola delantera en una punta y la trasera en la otra, reemplaza 4 brazos sueltos por 2 vigas que se apoyan en el larguero del ala. Menos piezas, más rígido (importante contra el *whirl flutter*) y las cargas van directo al ala. Las góndolas quedan en el mismo lugar del boceto. `PENDIENTE` de aprobación.
+4. **Forma del ala:** en el boceto se ve con flecha y curva hacia atrás. `PENDIENTE` confirmar si es intencional.
 
 Arquitecturas a comparar en el sizing:
 

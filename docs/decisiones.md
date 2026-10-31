@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: vista en planta y cola tipo S-97
+
+- **Decisión:** se adopta la cola tipo S-97 con una sola propulsora en el eje. Se mantiene el ala. 4 góndolas basculantes coaxiales: 2 delante del ala en brazos desde la nariz, 2 detrás del ala en brazos desde el fuselaje. Boceto en `docs/bocetos/2026-10-31-vista-en-planta.png`.
+- **Por qué:** disposición elegida por Julian.
+- **Pendiente:** propuesta de una viga por lado en lugar de 4 brazos; forma del ala; distribución de los 4 pasajeros.
+
 ## 31/10/2026: reparto de baterías en diagonal y propuesta de cola tipo S-97
 
 - **Decisión:** se aprueba el reparto de baterías en circuitos independientes, cada paquete alimentando dos rotores en diagonal.
