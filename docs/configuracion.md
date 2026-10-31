@@ -73,6 +73,13 @@ Observaciones de Claude sobre la planta:
 1. **Hover y crucero tienen que coincidir en el centro de gravedad.** En hover, el centro de gravedad tiene que caer en el centro de las 4 góndolas; en crucero, un poco por delante del punto neutro (que depende del ala y de la cola). En el boceto, el centro de las góndolas cae más o menos sobre el ala: es lo que hace falta. Se verifica con números en la etapa de geometría.
 2. **Discos de los rotores fuera del ala, vistos desde arriba.** Si un disco tapa el ala, su estela la golpea en hover (descarga). Conviene que los brazos alejen los discos del borde de ataque y del borde de fuga.
 3. **Propuesta: una viga por lado en vez de 4 brazos.** En el boceto, la góndola delantera y la trasera de cada lado quedan casi alineadas. Una viga (boom) por lado, por debajo del ala, que lleve la góndola delantera en una punta y la trasera en la otra, reemplaza 4 brazos sueltos por 2 vigas que se apoyan en el larguero del ala. Menos piezas, más rígido (importante contra el *whirl flutter*) y las cargas van directo al ala. Las góndolas quedan en el mismo lugar del boceto. **Aprobado por Julian** el 31/10/2026.
+**Vista lateral de Julian** ([`bocetos/2026-10-31-vista-lateral.png`](bocetos/2026-10-31-vista-lateral.png), 31/10/2026): fuselaje con ventanas, ala alta, puerta a un costado bajo el ala, cola larga con deriva y la propulsora al final. Observaciones de Claude, `PENDIENTE` de respuesta:
+
+- **Altura de las góndolas:** en el dibujo, las 4 quedan por debajo del fuselaje y la trasera no está más alta que la delantera, como se decidió.
+- **Suelo:** si las góndolas quedan por debajo de la panza, el tren de aterrizaje tiene que ser más alto que ellas más el radio de las palas en hover.
+- **Soportes:** en el dibujo salen brazos del fuselaje; se había aprobado una viga por lado bajo el ala.
+- Puede ser solo una simplificación del boceto; confirmar.
+
 4. **Forma del ala.** Julian la dibujó con flecha hacia atrás por aerodinámica y preguntó si conviene recta o con flecha hacia adelante, como el Sukhoi Su-47. Análisis de Claude:
    - **Para qué sirve la flecha:** retrasa los efectos de compresibilidad (la resistencia que crece cerca de la velocidad del sonido). Se usa a partir de Mach 0,6–0,7 aproximadamente. A 180 km/h (50 m/s) el eVTOL vuela a Mach ≈ 0,15: la flecha no aporta nada. Raymer trata la elección de la flecha según el número de Mach `[cita sin verificar]`.
    - **Lo que cuesta la flecha hacia atrás:** sustenta menos para el mismo tamaño, la estructura pesa más (el ala es más larga para la misma envergadura) y tiende a entrar en pérdida primero en las puntas, donde están los alerones.

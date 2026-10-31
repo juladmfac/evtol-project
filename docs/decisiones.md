@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: trayecto, reserva y puerta
+
+- **Decisión:** misión en el área metropolitana de Buenos Aires: Puerto Madero → Tigre, o la ruta La Plata → Puerto Madero → Tigre → Pilar. Reserva de 20 min como mínimo. Una sola puerta tipo puerta-escalera, con bisagra abajo.
+- **Por qué:** elección de Julian.
+- **Pendiente:** si se recarga en cada escala (define la misión de diseño); verificar las distancias en un mapa; si la norma pide una salida de emergencia adicional.
+
 ## 31/10/2026: ala recta y cabina 2 y 2 enfrentados
 
 - **Decisión:** ala recta con estrechamiento y puntas con una pequeña curva hacia atrás. Cabina de pasajeros amplia, 4 asientos en 2 filas enfrentadas, con ventanas laterales.

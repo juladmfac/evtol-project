@@ -6,7 +6,35 @@ Cada requisito lleva su valor, su justificación y su fuente. Lo que no tenga fu
 
 - **Qué es:** taxi aéreo de pasajeros, **autónomo** (vuela con IA, sin piloto), sin cabina de tripulación. Decidido por Julian el 31/10/2026.
 - **Qué transporta:** pasajeros y su equipaje o carga.
-- **Trayecto:** `PENDIENTE`. Elegir dos puntos reales y medir la distancia en un mapa.
+- **Trayecto:** área metropolitana de Buenos Aires (Julian, 31/10/2026). Dos casos:
+  - **Tramo simple:** Puerto Madero → Tigre.
+  - **Ruta con escalas:** La Plata → Puerto Madero → Tigre → Pilar.
+
+### Distancias
+
+En línea recta, calculadas por Claude con coordenadas aproximadas del centro de cada lugar. `SUPUESTO`: verificar con la herramienta "medir distancia" de Google Maps entre los puntos exactos de despegue y aterrizaje. La ruta real puede ser más larga si sigue corredores aéreos.
+
+| Tramo | Distancia (km) | Tiempo a 180 km/h (min) |
+| --- | --- | --- |
+| La Plata → Puerto Madero | ≈ 51 | ≈ 17 |
+| Puerto Madero → Tigre | ≈ 29 | ≈ 10 |
+| Tigre → Pilar | ≈ 31 | ≈ 10 |
+| **Ruta completa** | **≈ 110** | **≈ 37** |
+
+Los tiempos son solo de crucero: no incluyen despegue, transición, ascenso, descenso ni aterrizaje.
+
+### Misión de diseño
+
+`PENDIENTE`: ¿se recarga en cada escala?
+
+- **Con recarga en cada escala:** la batería se dimensiona para el tramo más largo (La Plata → Puerto Madero, ≈ 51 km) más la reserva.
+- **Sin recarga:** la batería se dimensiona para la ruta completa (≈ 110 km), con 4 despegues y 4 aterrizajes verticales (el hover es la fase que más energía consume), más la reserva.
+
+Propuesta de Claude: el sizing calcula las dos y se decide con los números.
+
+### Nota operativa
+
+Aeroparque Jorge Newbery queda entre Puerto Madero y Tigre, sobre la costa: el tramo atraviesa espacio aéreo controlado. No afecta al sizing, pero sí a la altura y la ruta reales.
 
 ### Nota regulatoria sobre la autonomía
 
@@ -23,7 +51,7 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 | Masa total | `PENDIENTE`. Propuesta de Claude: que el peso máximo de despegue salga del sizing | Los 3000–3500 kg iniciales se fijaron para 2–4 pasajeros; usarlos solo como referencia de control | Julian, 31/10/2026 |
 | Carga útil | `PENDIENTE` (pasajeros + equipaje + equipamiento) | Se divide más adelante | Julian, 31/10/2026 |
 | Alcance | `PENDIENTE` | Sale del trayecto elegido | — |
-| Reserva de energía | `PENDIENTE`: propuesta de 20 min, ver abajo | Criterio regulatorio | FAA / EASA, ver abajo |
+| Reserva de energía | 20 min como mínimo; estudio de sensibilidad con 30 min | Criterio regulatorio | Julian, 31/10/2026; FAA, ver abajo |
 | Velocidad de crucero | 180 km/h (50 m/s), valor inicial | Puede ajustarse después del sizing | Julian, 31/10/2026 |
 | Altitud de crucero | `PENDIENTE` | | |
 
@@ -33,7 +61,7 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 - **EASA:** propone una reserva basada en desempeño, equivalente a la energía para un escape (go-around) más una aproximación, sin minutos fijos. **Verificar si ya fue adoptada y su texto vigente.**
 - **ANAC:** no se encontró norma específica de eVTOL. **Verificar.**
 
-**Propuesta de Claude:** usar 20 min a velocidad de mejor alcance como base, porque es la única cifra fija vigente encontrada, y hacer un estudio de sensibilidad con 30 min. `PENDIENTE` de decisión.
+**Decisión (Julian, 31/10/2026):** 20 min como mínimo, a velocidad de mejor alcance, con un estudio de sensibilidad con 30 min. Es la única cifra fija vigente encontrada.
 
 ## Cabina
 
@@ -43,7 +71,9 @@ Implicancias a resolver en la geometría:
 
 - **Largo de cabina:** dos filas enfrentadas necesitan espacio para las piernas entre ellas. Medidas de asientos, pasillos y espacio para piernas: tomarlas de Roskam, Parte III (diseño de cabina y fuselaje) o de Raymer, no suponerlas.
 - **Centro de gravedad:** la cabina conviene centrada bajo el ala, que es donde cae el centro de gravedad. Así, volar con 1 o con 4 pasajeros lo mueve poco.
-- **Puertas:** lejos de los discos de las góndolas. Con ala alta, la puerta puede ir bajo el ala, entre las góndolas delanteras y traseras. `PENDIENTE` de ubicación.
+- **Puerta:** una sola, a un costado, bajo el ala, entre las góndolas delanteras y traseras. Se abre de arriba hacia abajo, con la bisagra abajo, como una puerta-escalera (*airstair*) de avión ejecutivo: abierta, sirve de escalón (Julian, 31/10/2026). Vista lateral: [`bocetos/2026-10-31-vista-lateral.png`](bocetos/2026-10-31-vista-lateral.png).
+  - `PENDIENTE` verificar en la normativa (SC-VTOL) si con 4 pasajeros alcanza una sola puerta o hace falta una salida de emergencia adicional.
+  - Los escalones de la puerta abierta tienen que quedar lejos de los discos de las góndolas.
 
 Historial, todo del 31/10/2026: dos cabinas con 6 asientos (4 adelante en 2 bancos enfrentados, 2 atrás de "clase alta") → 2 pasajeros → 4 pasajeros.
 
