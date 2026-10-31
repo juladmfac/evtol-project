@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: góndolas traseras más altas
+
+- **Decisión:** las góndolas traseras van más altas que las delanteras, sobre un pilón en la punta trasera de cada viga.
+- **Por qué:** quedan fuera de la estela de los delanteros en transición y del chorro de las hélices delanteras y de la estela del ala en crucero.
+- **Pendiente:** cuánto más altas (DUST, VSPAERO); forma del ala (Claude propone recta con estrechamiento, ver `docs/configuracion.md`).
+
 ## 31/10/2026: una viga por lado
 
 - **Decisión:** las góndolas delantera y trasera de cada lado van montadas en una viga por lado, por debajo del ala, en lugar de 4 brazos.

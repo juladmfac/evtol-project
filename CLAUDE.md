@@ -75,7 +75,7 @@ Verificar siempre la versión vigente en el sitio de cada autoridad: EASA SC-VTO
 
 ```text
 CLAUDE.md
-docs/          requisitos, configuración, método, aerodinámica, decisiones
+docs/          requisitos, configuración, método, aerodinámica, decisiones, glosario, bocetos/
 sizing/        Python: dimensionamiento, con tests en sizing/tests/
 notebooks/     estudios de sensibilidad y gráficos
 perfiles/      polares de XFOIL o XFLR5
