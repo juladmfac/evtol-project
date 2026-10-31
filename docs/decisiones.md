@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: ala recta y cabina 2 y 2 enfrentados
+
+- **Decisión:** ala recta con estrechamiento y puntas con una pequeña curva hacia atrás. Cabina de pasajeros amplia, 4 asientos en 2 filas enfrentadas, con ventanas laterales.
+- **Por qué:** a 180 km/h (Mach ≈ 0,15) la flecha no aporta y cuesta sustentación y peso; las puntas curvadas dan el aspecto buscado sin costo aerodinámico apreciable. Distribución de cabina elegida por Julian.
+- **Pendiente:** medidas de cabina (Roskam Parte III o Raymer) y ubicación de las puertas.
+
 ## 31/10/2026: góndolas traseras más altas
 
 - **Decisión:** las góndolas traseras van más altas que las delanteras, sobre un pilón en la punta trasera de cada viga.

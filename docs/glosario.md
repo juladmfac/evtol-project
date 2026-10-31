@@ -5,6 +5,7 @@ Términos que se usan en el proyecto, en orden alfabético.
 | Término | Qué es |
 | --- | --- |
 | **Buje** | Pieza central del rotor, donde se sujetan las palas. |
+| **Cabina** | Espacio para los pasajeros (cabina de pasajeros). El espacio de los pilotos es la cabina de mando o de pilotaje (*cockpit*); este eVTOL no la tiene. |
 | **Carga de disco** | Peso dividido por el área total que barren los rotores. Cuanto más baja, menos potencia hace falta en hover. |
 | **Centro de gravedad** | Punto donde se puede considerar concentrado todo el peso. En hover tiene que quedar en el centro de los rotores; en crucero, un poco por delante del punto neutro. |
 | **Coaxial** | Dos rotores superpuestos sobre el mismo eje, que giran en sentidos opuestos. |

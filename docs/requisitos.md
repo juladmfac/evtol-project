@@ -37,7 +37,13 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 
 ## Cabina
 
-Sin cabina de tripulación. 4 pasajeros en un fuselaje ensanchado (Julian, 31/10/2026). Distribución de los asientos `PENDIENTE`.
+Sin cabina de mando. 4 pasajeros en una cabina amplia, **2 y 2 enfrentados**, cada uno con ventana lateral (Julian, 31/10/2026).
+
+Implicancias a resolver en la geometría:
+
+- **Largo de cabina:** dos filas enfrentadas necesitan espacio para las piernas entre ellas. Medidas de asientos, pasillos y espacio para piernas: tomarlas de Roskam, Parte III (diseño de cabina y fuselaje) o de Raymer, no suponerlas.
+- **Centro de gravedad:** la cabina conviene centrada bajo el ala, que es donde cae el centro de gravedad. Así, volar con 1 o con 4 pasajeros lo mueve poco.
+- **Puertas:** lejos de los discos de las góndolas. Con ala alta, la puerta puede ir bajo el ala, entre las góndolas delanteras y traseras. `PENDIENTE` de ubicación.
 
 Historial, todo del 31/10/2026: dos cabinas con 6 asientos (4 adelante en 2 bancos enfrentados, 2 atrás de "clase alta") → 2 pasajeros → 4 pasajeros.
 
