@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: reparto de baterías en diagonal y propuesta de cola tipo S-97
+
+- **Decisión:** se aprueba el reparto de baterías en circuitos independientes, cada paquete alimentando dos rotores en diagonal.
+- **En evaluación:** reemplazar la cola en V y las 2 propulsoras por una cola como la del Sikorsky S-97 con una sola propulsora en el eje. Julian duda de que hagan falta 2 propulsoras y quiere poder avanzar sin bascular las góndolas. Análisis en `docs/configuracion.md`.
+- **Pendiente:** dónde van las góndolas traseras con la cola nueva; comparar en el sizing con y sin propulsora.
+
 ## 31/10/2026: rotores coaxiales y baterías independientes
 
 - **Decisión:** las 4 góndolas basculantes llevan 2 rotores coaxiales cada una (8 rotores). Varios paquetes de baterías independientes. Se confirman 4 pasajeros. Las góndolas traseras cuelgan de un brazo bajo la cola.

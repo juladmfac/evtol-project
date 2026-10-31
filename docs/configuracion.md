@@ -45,6 +45,34 @@ Con 4 posiciones de rotor, el problema de perder uno en hover sigue abierto. Opc
 | Motores redundantes | Cada rotor movido por dos motores, o por un motor con bobinados independientes | Cubre la falla del motor o de su electrónica, que son las más probables | No cubre la rotura de una pala ni la falla del mecanismo de basculación |
 | 2 rotores en la cola | 4 en el ala + 2 en las puntas de la cola en V: 6 posiciones sin agregar nada al ala | La cola en V ya existe y queda lejos del centro de gravedad, buen brazo para controlar | La cola tiene que soportar las góndolas; la disposición del Joby S4 es parecida (verificar) |
 
+### Cola tipo S-97 y una sola propulsora central (propuesta de Julian, 31/10/2026, en evaluación)
+
+Referencia: [`bocetos/2026-10-31-referencia-s97-cola-propulsora.png`](bocetos/2026-10-31-referencia-s97-cola-propulsora.png), Sikorsky S-97 Raider (helicóptero compuesto: rotor coaxial + hélice propulsora en la cola). Propuesta: reemplazar la cola en V por una cola como la del S-97 (estabilizador horizontal con derivas verticales en las puntas y deriva ventral) y las 2 propulsoras por **una sola hélice propulsora en el eje, al final de la cola**. Uso pensado por Julian: acelerar o reposicionar la aeronave hacia adelante sin bascular las góndolas.
+
+**Análisis de Claude**
+
+A favor:
+
+1. **Una hélice en el eje no genera empuje asimétrico** si falla, a diferencia de dos propulsoras lado a lado. Y si falla, las góndolas basculantes siguen pudiendo empujar hacia adelante: la redundancia ya existe.
+2. **Moverse hacia adelante con el fuselaje nivelado.** Un multirrotor avanza inclinando todo el cuerpo; con la propulsora, las góndolas siguen verticales sosteniendo el peso y la hélice empuja. Sirve para reposicionar a baja velocidad, contrarrestar ráfagas y en la transición. Nota: las góndolas también pueden inclinarse unos pocos grados, no solo 0° o 90°; la propulsora evita usar el mecanismo de basculación para eso.
+3. **Lejos de las puertas**, y con un solo motor en vez de dos.
+4. **Ingestión de la capa límite.** Una hélice detrás del fuselaje trabaja en el aire lento de la estela, lo que puede mejorar su rendimiento. A cambio, ese aire es irregular: más vibración y ruido.
+
+En contra:
+
+1. **Peso en la punta de la cola:** motor, hélice y estructura más fuerte. Corre el centro de gravedad hacia atrás; se compensa con las baterías adelante.
+2. **¿Dónde van las góndolas traseras?** Hoy cuelgan de un brazo bajo la cola en V. Con la cola nueva hay que reubicarlas: en las puntas del estabilizador horizontal (las derivas podrían servir de soporte, pero el peso en las puntas carga al estabilizador en torsión y puede generar vibraciones), o en vigas (booms) que salgan del ala. `PENDIENTE`.
+3. **Estela de las góndolas traseras sobre la hélice** cuando basculan para crucero. A revisar con la geometría.
+4. **Seguridad en tierra:** una hélice girando en la cola, a la altura de una persona que camina detrás. En una aeronave sin piloto, hay que proteger esa zona.
+5. **Una hélice más para cargar** cuando las góndolas basculantes ya empujan en crucero. El sizing tiene que mostrar que su peso se paga.
+
+Arquitecturas a comparar en el sizing:
+
+| Variante | Hover | Baja velocidad y transición | Crucero |
+| --- | --- | --- | --- |
+| T4c+P1 | 4 góndolas coaxiales | Góndolas verticales + propulsora | Góndolas basculadas + propulsora (o propulsora sola) |
+| T4c | 4 góndolas coaxiales | Góndolas inclinadas unos grados | Góndolas basculadas |
+
 ### Arquitecturas a comparar
 
 | Variante | Hover | Crucero | Comentario |
@@ -128,4 +156,4 @@ Góndolas: delantera izquierda (DI), delantera derecha (DD), trasera izquierda (
 
 Si falla un paquete, se pierde un rotor en dos góndolas opuestas en diagonal, y esos dos rotores giran en sentidos contrarios. El empuje que se pierde queda simétrico respecto del centro de gravedad (si está en el centro de las 4 góndolas) y los pares de giro se compensan. Quedan 6 rotores, que tienen que poder sostener la aeronave: eso fija cuánto margen de potencia necesita cada motor, y lo calcula el sizing.
 
-Además: cada paquete en su propio compartimento resistente al fuego, para que un incendio de celdas (embalamiento térmico) no se propague, y con su propio sistema de gestión (BMS). Las propulsoras: `PENDIENTE` si tienen paquete propio o comparten. Tensión del sistema: `PENDIENTE`, sale del sizing. Toda la tabla es una propuesta `PENDIENTE` de aprobación.
+Además: cada paquete en su propio compartimento resistente al fuego, para que un incendio de celdas (embalamiento térmico) no se propague, y con su propio sistema de gestión (BMS). La propulsora: `PENDIENTE` si tiene paquete propio o comparte. Tensión del sistema: `PENDIENTE`, sale del sizing. Reparto en diagonal **aprobado por Julian** el 31/10/2026.
