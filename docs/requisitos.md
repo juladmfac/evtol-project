@@ -19,8 +19,8 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 
 | Requisito | Valor | Justificación | Fuente |
 | --- | --- | --- | --- |
-| Pasajeros | `PENDIENTE`: 2–4 según Julian, pero la distribución de cabina pedida suma 6 | Ver "Cabina" | Julian, 31/10/2026 |
-| Masa total | 3000–3500 kg | `PENDIENTE` confirmar si es el peso máximo de despegue (avión + pasajeros + carga) | Julian, 31/10/2026 |
+| Pasajeros | 2 | Aeronave más chica y con menos carga | Julian, 31/10/2026 (reemplaza 2–4 y la cabina de 6 asientos) |
+| Masa total | `PENDIENTE`: los 3000–3500 kg se fijaron para 2–4 pasajeros y ya no aplican. Propuesta de Claude: que el peso máximo de despegue salga del sizing | | Julian, 31/10/2026 |
 | Carga útil | `PENDIENTE` (pasajeros + equipaje + equipamiento) | Se divide más adelante | Julian, 31/10/2026 |
 | Alcance | `PENDIENTE` | Sale del trayecto elegido | — |
 | Reserva de energía | `PENDIENTE`: propuesta de 20 min, ver abajo | Criterio regulatorio | FAA / EASA, ver abajo |
@@ -37,12 +37,9 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 
 ## Cabina
 
-Pedido de Julian (31/10/2026): dos cabinas, sin cabina de tripulación.
+Sin cabina de tripulación. 2 pasajeros (Julian, 31/10/2026). Distribución de los asientos `PENDIENTE`.
 
-- **Cabina delantera:** 4 pasajeros en 2 bancos de 2 asientos, enfrentados, cada pasajero con vista lateral a una ventana.
-- **Cabina trasera ("clase alta"):** 2 asientos individuales enfrentados, con vista lateral a las ventanas.
-
-`PENDIENTE`: la distribución suma **6 asientos**, y el requisito dice 2–4 pasajeros. Hay que definir si el diseño es para 6 o si la cabina cambia.
+Historial: la primera propuesta tenía dos cabinas con 6 asientos (4 adelante en 2 bancos enfrentados, 2 atrás de "clase alta"). Se reemplazó por la de 2 pasajeros.
 
 ## Perfil de misión
 
@@ -73,7 +70,7 @@ Fuente candidata para las duraciones de hover y transición: la misión de refer
 
 ## Configuración candidata
 
-Ala volante / cuerpo de ala integrada (forma triangular, inspirada en el concepto Airbus ZEROe de ala integrada) con rotores basculantes. Análisis y riesgos en `docs/configuracion.md`.
+Fuselaje + ala alta + cola en V + rotores basculantes, 4 rotores en primera instancia y probablemente 6 o más. Reemplaza al ala volante triangular. Análisis y riesgos en `docs/configuracion.md`.
 
 ## Prototipo a escala
 

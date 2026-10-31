@@ -1,50 +1,64 @@
 # Comparación de configuraciones
 
-## Preferencia de Julian (31/10/2026)
+## Configuración actual (31/10/2026)
 
-**Ala volante / cuerpo de ala integrada (BWB) triangular + rotores basculantes**, inspirada en la forma del Airbus ZEROe de ala integrada. Motivo: la forma triangular sustenta con todo el cuerpo y permitiría usar pocos rotores.
+Boceto de Julian: [`bocetos/2026-10-31-fuselaje-ala-alta-cola-v.jpg`](bocetos/2026-10-31-fuselaje-ala-alta-cola-v.jpg)
 
-Contexto: el ZEROe de ala integrada era un concepto de avión de línea a hidrógeno, sin despegue vertical. Su forma se toma como inspiración, no como referencia de números.
+Lectura de Claude del boceto (`PENDIENTE` que Julian la confirme):
 
-## Análisis de Claude: ventajas y riesgos a evaluar
+- **Fuselaje convencional** con nariz redondeada y ventanas, para 2 pasajeros.
+- **Ala alta**, recta, montada sobre el fuselaje.
+- **Cola en V** arriba de la parte trasera.
+- **4 rotores en góndolas sobre brazos**, dibujados en posición de hover: un par alto, a la altura del ala, y un par bajo, en brazos que salen de la parte inferior del fuselaje. Los de adelante y los de atrás quedan a distinta altura. Julian anticipa que la norma lo lleve a 6 o más.
+- **Rotores basculantes**: `PENDIENTE` si basculan los 4 o solo algunos.
 
-Son hipótesis cualitativas; el sizing y la geometría las confirman o las descartan.
+### Opinión de Claude
 
-### A favor
+Hipótesis cualitativas; el sizing y la geometría las confirman o las descartan.
 
-- **Todo el cuerpo sustenta**, no solo el ala.
-- **Mucho volumen interno** para repartir baterías y cabinas.
-- **Mucha superficie para montar rotores** en puntas, borde de ataque o borde de fuga, alrededor del centro de gravedad.
+**A favor**
 
-### Riesgos
+1. **Se puede calcular con los libros.** Fuselaje, ala alta y cola son la configuración que cubren Raymer, Roskam y Gudmundsson, con métodos de pesos y aerodinámica directamente aplicables. Con el ala triangular había que adaptar casi todo.
+2. **Ala alta:** deja el piso de la cabina cerca del suelo para subir y bajar, buena vista hacia abajo desde las ventanas, y la estela de los rotores bajos no la golpea de lleno en hover.
+3. **Cola en V:** dos superficies en vez de tres, menos superficie mojada y menos resistencia. La contra habitual, que los mandos de profundidad y dirección quedan mezclados, no importa en una aeronave autónoma: la computadora de vuelo hace la mezcla.
+4. **Rotores delanteros y traseros a distinta altura:** ayuda a que los traseros no traguen la estela de los delanteros, ni en hover ni en transición.
 
-1. **Efecto de escala.** Las ventajas de un BWB están estudiadas para aviones grandes, donde la cabina entra holgada en el espesor del cuerpo central. En una aeronave de unas 3 t, la altura de una cabina con gente sentada obliga a un cuerpo central muy grueso respecto de su cuerda, y eso agrega resistencia. Hay que verificar con la geometría si todavía conviene.
-2. **Estabilidad sin cola.** Un ala volante tiene un rango de centro de gravedad estrecho. Con dos cabinas, una adelante y otra atrás, el centro de gravedad se mueve según quién viaje y dónde. Soluciones posibles: baterías ubicadas para compensar, perfiles con borde de fuga levantado (reflex), flecha con torsión, superficies verticales o una cola chica.
-3. **Descarga en hover.** En vuelo estacionario, la estela de los rotores golpea el ala y le resta empuje útil. Un ala triangular grande debajo de los rotores puede agravarlo. Conviene ubicar los rotores por fuera de la planta o que la parte que bascula los saque del ala.
-4. **Pocos rotores contra tolerancia a fallas.** Pocos rotores grandes son más eficientes en hover, porque tienen menos carga de disco. Pero si falla uno, los demás tienen que sostener la aeronave, y la norma (EASA SC-VTOL, categoría reforzada) exige seguir volando y aterrizar de forma segura después de una falla. Al ser autónomo y sin piloto, la tolerancia a fallas pesa todavía más. La cantidad de rotores se decide con el sizing, comparando variantes.
-5. **Ventanas laterales.** En un BWB la cabina queda "adentro" del ala: solo los asientos cercanos al borde del cuerpo central tienen ventana. La cabina trasera, en especial, puede quedar sin vista lateral. Lo mismo pasa con las salidas de emergencia.
+**Riesgos a evaluar**
+
+1. **Brazos largos.** Pesan, suman resistencia en crucero y son flexibles. En rotores basculantes hay un fenómeno conocido, el *whirl flutter* (vibración acoplada entre la góndola y el rotor), que empeora cuando el soporte es flexible. Alternativa: apoyar las góndolas en el ala o en vigas (booms) bajo el ala, que comparten estructura.
+2. **Rotores bajos a la altura de la puerta.** Los pasajeros suben al lado de rotores que pueden estar girando, y las palas quedan cerca del suelo. En una aeronave sin piloto, que nadie supervisa en el embarque, es un punto de seguridad importante.
+3. **4 rotores y falla de uno.** Con 4 rotores, si falla uno en hover queda un empuje asimétrico difícil de compensar. La norma (EASA SC-VTOL, categoría reforzada) exige seguir volando y aterrizar de forma segura después de una falla, sin fijar una cantidad de rotores. Conviene dibujar desde ya una geometría donde entren 6 en posiciones simétricas, y comparar 4, 6 y 8 en el sizing.
+4. **Estela de los rotores sobre la cola en V en crucero**, si los traseros basculan hacia adelante y quedan a la altura de la cola. A revisar con la geometría.
+5. **Centro de gravedad:** en hover, los rotores tienen que rodear el centro de gravedad en planta. Con 2 pasajeros y baterías, ubicarlas para que el centro de gravedad quede entre los pares de rotores.
 
 ### Propuesta de comparación
 
-Para saber si el BWB conviene hace falta una **referencia convencional** contra la cual medirlo:
+Ya no hace falta una "referencia convencional": esta configuración lo es. Se comparan variantes de la misma configuración:
 
-| Variante | Descripción |
-| --- | --- |
-| A | BWB triangular + rotores basculantes (preferencia de Julian) |
-| B | Referencia: fuselaje + ala convencional + rotores basculantes, misma misión y misma cabina |
+| Variante | Rotores | Qué bascula |
+| --- | --- | --- |
+| C-4 | 4 | `PENDIENTE` |
+| C-6 | 6 | `PENDIENTE` |
+| C-8 | 8 | `PENDIENTE` |
 
-Y para cada una, variantes de cantidad de rotores. `PENDIENTE` de aprobación.
+| Criterio | C-4 | C-6 | C-8 | Fuente |
+| --- | --- | --- | --- | --- |
+| Peso máximo de despegue | | | | sizing |
+| Potencia en hover, normal y con un rotor caído | | | | sizing |
+| L/D en crucero | | | | VSPAERO / CFD |
+| Energía de batería | | | | sizing |
+| Rango de centro de gravedad | | | | geometría |
 
-| Criterio | A: BWB | B: convencional | Fuente |
-| --- | --- | --- | --- |
-| Peso máximo de despegue | | | sizing |
-| Potencia en hover | | | sizing |
-| L/D en crucero | | | VSPAERO / CFD |
-| Energía de batería | | | sizing |
-| Rango de centro de gravedad | | | geometría |
-| Tolerancia a falla de un rotor | | | sizing |
-| Ventanas y salidas | | | CAD |
+## Configuración descartada: ala volante / BWB triangular
+
+Preferencia inicial de Julian (31/10/2026), inspirada en el Airbus ZEROe de ala integrada. Descartada el mismo día por Julian por ser muy compleja. Riesgos que se habían identificado:
+
+1. **Efecto de escala:** a unas 3 t, la cabina obliga a un cuerpo central muy grueso para su cuerda.
+2. **Estabilidad sin cola** con dos cabinas que mueven el centro de gravedad.
+3. **Descarga en hover** por el ala grande debajo de los rotores.
+4. **Pocos rotores contra tolerancia a fallas.**
+5. **Ventanas laterales** difíciles con la cabina dentro del ala.
 
 ## Decisión
 
-`PENDIENTE`
+`PENDIENTE`: configuración preferida, fuselaje + ala alta + cola en V + rotores basculantes. Falta definir la cantidad y el reparto de rotores.

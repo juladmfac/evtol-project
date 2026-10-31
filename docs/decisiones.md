@@ -2,6 +2,13 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: nueva configuración y 2 pasajeros
+
+- **Decisión:** se descarta el ala volante triangular. Nueva configuración: fuselaje + ala alta + cola en V + rotores basculantes, 4 rotores en primera instancia, probablemente 6 o más por norma. Transporta 2 pasajeros.
+- **Por qué:** según Julian, el ala triangular era muy compleja; con 2 pasajeros la aeronave es más chica y lleva menos carga.
+- **Consecuencias:** la masa total de 3000–3500 kg y la cabina de 6 asientos quedan sin efecto. Boceto en `docs/bocetos/2026-10-31-fuselaje-ala-alta-cola-v.jpg`.
+- **Pendiente:** cantidad y reparto de rotores, qué rotores basculan, distribución de los 2 asientos.
+
 ## 31/10/2026: misión y configuración preferida
 
 - **Decisión:** taxi aéreo de pasajeros autónomo (IA), sin cabina de tripulación. Masa total 3000–3500 kg, velocidad de crucero inicial 180 km/h. Dos cabinas con asientos enfrentados y vista lateral. Configuración preferida: ala volante / BWB triangular con rotores basculantes.
