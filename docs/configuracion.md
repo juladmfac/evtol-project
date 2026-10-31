@@ -4,12 +4,12 @@
 
 Boceto de Julian: [`bocetos/2026-10-31-fuselaje-ala-alta-cola-v.jpg`](bocetos/2026-10-31-fuselaje-ala-alta-cola-v.jpg)
 
-Lectura de Claude del boceto (`PENDIENTE` que Julian la confirme):
+Lectura de Claude del boceto, confirmada y corregida por Julian:
 
 - **Fuselaje convencional** con nariz redondeada y ventanas, ensanchado para 4 pasajeros (antes 2).
 - **Ala alta**, recta, montada sobre el fuselaje.
 - **Cola en V** arriba de la parte trasera.
-- **4 rotores basculantes en góndolas sobre brazos**, dibujados en posición de hover: un par alto, a la altura del ala, y un par bajo, en brazos que salen de la parte inferior del fuselaje. Los de adelante y los de atrás quedan a distinta altura. Basculan los 4 (confirmado por Julian, 31/10/2026). Julian anticipa que la norma lo lleve a 6 o más.
+- **4 góndolas basculantes sobre brazos, cada una con 2 rotores coaxiales**: 8 rotores en 4 posiciones (Julian, 31/10/2026). Los de adelante y los de atrás quedan a distinta altura. Las góndolas traseras cuelgan de un brazo que sale de abajo de la cola ([`bocetos/2026-10-31-detalle-gondola.jpg`](bocetos/2026-10-31-detalle-gondola.jpg), cola vista de costado). Posición exacta de las delanteras `PENDIENTE` de plano.
 - **2 hélices propulsoras fijas** en la parte trasera del fuselaje, al pie de la cola en V, que solo empujan hacia adelante (Julian, 31/10/2026). Ubicación marcada en [`bocetos/2026-10-31-ubicacion-helices-propulsoras.png`](bocetos/2026-10-31-ubicacion-helices-propulsoras.png).
 
 ### Hélices propulsoras traseras: análisis de Claude
@@ -35,7 +35,7 @@ Es una disposición posible y usada: varios eVTOL de sustentación + crucero lle
 
 ### Tolerancia a la falla de un rotor en hover
 
-Julian (31/10/2026): integrar 6 rotores basculantes en el ala es muy complejo; prefiere mantener 4 basculantes + 2 propulsoras y ensanchar el fuselaje para 4 pasajeros. Boceto de detalle: [`bocetos/2026-10-31-detalle-gondola.jpg`](bocetos/2026-10-31-detalle-gondola.jpg) (`PENDIENTE` que Julian explique qué muestra).
+Julian (31/10/2026): integrar 6 rotores basculantes en el ala es muy complejo; prefiere mantener 4 basculantes + 2 propulsoras y ensanchar el fuselaje para 4 pasajeros. Boceto de detalle: [`bocetos/2026-10-31-detalle-gondola.jpg`](bocetos/2026-10-31-detalle-gondola.jpg) (cola vista de costado; de abajo sale el brazo que sostiene una góndola basculante trasera).
 
 Con 4 posiciones de rotor, el problema de perder uno en hover sigue abierto. Opciones de Claude que no obligan a meter más rotores en el ala:
 
@@ -49,7 +49,7 @@ Con 4 posiciones de rotor, el problema de perder uno en hover sigue abierto. Opc
 
 | Variante | Hover | Crucero | Comentario |
 | --- | --- | --- | --- |
-| T4+P2 | 4 rotores basculantes | 4 basculantes + 2 propulsoras | Configuración actual de Julian |
+| T4c+P2 | 4 góndolas basculantes coaxiales (8 rotores) | 4 góndolas + 2 propulsoras | **Elegida por Julian** |
 | T6 | 6 rotores basculantes | 6 basculantes | Sin propulsoras; mejor tolerancia a falla en hover |
 | L+P2 | 4, 6 u 8 rotores **fijos** de sustentación | 2 propulsoras | Sin mecanismo de basculación; los rotores fijos quedan detenidos y hacen resistencia en crucero |
 | T6+P2 | 6 rotores basculantes | 6 basculantes + 2 propulsoras | Tolerancia a falla en hover y propulsoras para transición |
@@ -69,15 +69,15 @@ Hipótesis cualitativas; el sizing y la geometría las confirman o las descartan
 
 1. **Brazos largos.** Pesan, suman resistencia en crucero y son flexibles. En rotores basculantes hay un fenómeno conocido, el *whirl flutter* (vibración acoplada entre la góndola y el rotor), que empeora cuando el soporte es flexible. Alternativa: apoyar las góndolas en el ala o en vigas (booms) bajo el ala, que comparten estructura.
 2. **Rotores bajos a la altura de la puerta.** Los pasajeros suben al lado de rotores que pueden estar girando, y las palas quedan cerca del suelo. En una aeronave sin piloto, que nadie supervisa en el embarque, es un punto de seguridad importante.
-3. **4 rotores y falla de uno.** Con 4 rotores, si falla uno en hover queda un empuje asimétrico difícil de compensar. La norma (EASA SC-VTOL, categoría reforzada) exige seguir volando y aterrizar de forma segura después de una falla, sin fijar una cantidad de rotores. Conviene dibujar desde ya una geometría donde entren 6 en posiciones simétricas, y comparar 4, 6 y 8 en el sizing.
+3. **4 rotores y falla de uno.** Con 4 rotores, si falla uno en hover queda un empuje asimétrico difícil de compensar. La norma (EASA SC-VTOL, categoría reforzada) exige seguir volando y aterrizar de forma segura después de una falla, sin fijar una cantidad de rotores. **Respuesta elegida por Julian: rotores coaxiales en las 4 góndolas** (ver "Tolerancia a la falla de un rotor en hover").
 4. **Estela de los rotores sobre la cola en V en crucero**, si los traseros basculan hacia adelante y quedan a la altura de la cola. A revisar con la geometría.
-5. **Centro de gravedad:** en hover, los rotores tienen que rodear el centro de gravedad en planta. Con 2 pasajeros y baterías, ubicarlas para que el centro de gravedad quede entre los pares de rotores.
+5. **Centro de gravedad:** en hover, los rotores tienen que rodear el centro de gravedad en planta. Con 4 pasajeros y baterías, ubicarlas para que el centro de gravedad quede entre los pares de rotores.
 
 ### Propuesta de comparación
 
-Ya no hace falta una "referencia convencional": esta configuración lo es. Se comparan las arquitecturas de la tabla anterior (`PENDIENTE` de aprobación de Julian):
+Julian eligió 4 góndolas basculantes coaxiales + 2 propulsoras (T4c+P2). Las otras arquitecturas quedan como alternativas por si el sizing no cierra:
 
-| Criterio | T4+P2 | T6 | L+P2 | T6+P2 | Fuente |
+| Criterio | T4c+P2 | T6 | L+P2 | T6+P2 | Fuente |
 | --- | --- | --- | --- | --- | --- |
 | Peso máximo de despegue | | | | | sizing |
 | Potencia en hover, normal y con un rotor caído | | | | | sizing |
@@ -97,4 +97,35 @@ Preferencia inicial de Julian (31/10/2026), inspirada en el Airbus ZEROe de ala 
 
 ## Decisión
 
-`PENDIENTE`: configuración preferida, fuselaje + ala alta + cola en V + 4 rotores basculantes + 2 hélices propulsoras fijas atrás. Falta decidir la arquitectura final con el sizing.
+Configuración preferida (Julian, 31/10/2026): fuselaje ensanchado para 4 pasajeros + ala alta + cola en V + 4 góndolas basculantes con rotores coaxiales (8 rotores) + 2 hélices propulsoras fijas atrás + varios paquetes de baterías independientes. Se confirma o se corrige con el sizing.
+
+## Arquitectura eléctrica
+
+Julian (31/10/2026): varios paquetes de baterías por seguridad.
+
+### Serie o paralelo
+
+| | En serie | En paralelo |
+| --- | --- | --- |
+| Qué se suma | La **tensión** (volts). La corriente es la misma en todos | La **capacidad** (amperes-hora) y la corriente que pueden entregar. La tensión es la misma |
+| Energía total | La suma de los paquetes | La suma de los paquetes |
+| Para qué sirve | Llegar a una tensión alta: para la misma potencia circula menos corriente, los cables son más finos y livianos y se pierde menos en calor | Sumar autonomía y corriente sin subir la tensión |
+| Si falla un paquete | Se corta la cadena entera: **todo lo que depende de esa serie se queda sin energía** | Los demás siguen entregando, con menos autonomía |
+| Cuidados | Aislación y arcos eléctricos a tensión alta; cada celda vigilada | Conectar paquetes a la misma tensión (si no, circulan corrientes entre ellos); un paquete en cortocircuito recibe la corriente de los otros, así que cada uno lleva fusible o contactor propio |
+
+En la práctica se usan las dos: **dentro** de cada paquete las celdas van en serie (para la tensión) y en paralelo (para la capacidad). **Entre** paquetes, para seguridad, lo habitual es no unirlos en una sola barra sino formar **circuitos independientes**: cada paquete alimenta a un grupo de motores, y una falla queda encerrada en su grupo.
+
+### Propuesta de Claude: cada paquete alimenta dos rotores en diagonal
+
+Góndolas: delantera izquierda (DI), delantera derecha (DD), trasera izquierda (TI), trasera derecha (TD). Cada una con rotor superior (S) e inferior (I), que giran en sentidos opuestos.
+
+| Paquete | Rotores que alimenta |
+| --- | --- |
+| 1 | DI-S + TD-I |
+| 2 | DD-S + TI-I |
+| 3 | TI-S + DD-I |
+| 4 | TD-S + DI-I |
+
+Si falla un paquete, se pierde un rotor en dos góndolas opuestas en diagonal, y esos dos rotores giran en sentidos contrarios. El empuje que se pierde queda simétrico respecto del centro de gravedad (si está en el centro de las 4 góndolas) y los pares de giro se compensan. Quedan 6 rotores, que tienen que poder sostener la aeronave: eso fija cuánto margen de potencia necesita cada motor, y lo calcula el sizing.
+
+Además: cada paquete en su propio compartimento resistente al fuego, para que un incendio de celdas (embalamiento térmico) no se propague, y con su propio sistema de gestión (BMS). Las propulsoras: `PENDIENTE` si tienen paquete propio o comparten. Tensión del sistema: `PENDIENTE`, sale del sizing. Toda la tabla es una propuesta `PENDIENTE` de aprobación.

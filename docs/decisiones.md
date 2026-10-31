@@ -2,6 +2,12 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: rotores coaxiales y baterías independientes
+
+- **Decisión:** las 4 góndolas basculantes llevan 2 rotores coaxiales cada una (8 rotores). Varios paquetes de baterías independientes. Se confirman 4 pasajeros. Las góndolas traseras cuelgan de un brazo bajo la cola.
+- **Por qué:** según Julian, los coaxiales dan tolerancia a la falla de un rotor en hover sin agregar góndolas al ala, y los paquetes separados, seguridad. 4 pasajeros porque la aeronave va a ser pesada de todos modos.
+- **Pendiente:** aprobar la propuesta de circuitos independientes (cada paquete alimenta dos rotores en diagonal, ver `docs/configuracion.md`), alimentación de las propulsoras y tensión del sistema.
+
 ## 31/10/2026: 4 pasajeros y fuselaje más ancho
 
 - **Decisión:** se mantienen 4 rotores basculantes + 2 propulsoras. Se ensancha el fuselaje para llevar 4 pasajeros en vez de 2.

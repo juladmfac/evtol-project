@@ -19,7 +19,7 @@ A la fecha, las reglas de aeronavegabilidad y de operación de eVTOL de pasajero
 
 | Requisito | Valor | Justificación | Fuente |
 | --- | --- | --- | --- |
-| Pasajeros | 4, en un fuselaje más ancho | Si la aeronave lleva igual 4 rotores basculantes + 2 propulsoras, conviene que transporte más gente | Julian, 31/10/2026 (reemplaza los 2 pasajeros) |
+| Pasajeros | 4, en un fuselaje más ancho (confirmado) | Si la aeronave lleva igual 4 góndolas + 2 propulsoras, conviene que transporte más gente | Julian, 31/10/2026 (reemplaza los 2 pasajeros) |
 | Masa total | `PENDIENTE`. Propuesta de Claude: que el peso máximo de despegue salga del sizing | Los 3000–3500 kg iniciales se fijaron para 2–4 pasajeros; usarlos solo como referencia de control | Julian, 31/10/2026 |
 | Carga útil | `PENDIENTE` (pasajeros + equipaje + equipamiento) | Se divide más adelante | Julian, 31/10/2026 |
 | Alcance | `PENDIENTE` | Sale del trayecto elegido | — |
@@ -70,7 +70,7 @@ Fuente candidata para las duraciones de hover y transición: la misión de refer
 
 ## Configuración candidata
 
-Fuselaje + ala alta + cola en V + 4 rotores basculantes + 2 hélices propulsoras fijas en la parte trasera del fuselaje. Julian anticipa 6 o más rotores por norma. Reemplaza al ala volante triangular. Análisis y riesgos en `docs/configuracion.md`.
+Fuselaje ensanchado + ala alta + cola en V + 4 góndolas basculantes con rotores coaxiales (8 rotores) + 2 hélices propulsoras fijas en la parte trasera del fuselaje + varios paquetes de baterías independientes. Reemplaza al ala volante triangular. Análisis y riesgos en `docs/configuracion.md`.
 
 ## Prototipo a escala
 
