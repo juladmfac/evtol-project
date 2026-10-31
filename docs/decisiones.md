@@ -2,6 +2,17 @@
 
 Una entrada por decisión, la más nueva arriba.
 
+## 31/10/2026: misión y configuración preferida
+
+- **Decisión:** taxi aéreo de pasajeros autónomo (IA), sin cabina de tripulación. Masa total 3000–3500 kg, velocidad de crucero inicial 180 km/h. Dos cabinas con asientos enfrentados y vista lateral. Configuración preferida: ala volante / BWB triangular con rotores basculantes.
+- **Por qué:** según Julian, más valioso que un taxi tripulado o que un dron de carga. La forma triangular sustenta con todo el cuerpo y permitiría usar pocos rotores.
+- **Pendiente:** cantidad de pasajeros (2–4 contra 6 asientos), si la masa total es el peso máximo de despegue, trayecto y alcance, reserva de energía. Ver `docs/requisitos.md` y `docs/configuracion.md`.
+
+## 31/10/2026: método para la aerodinámica y el flujo
+
+- **Decisión:** escalera de herramientas XFLR5 → OpenVSP/VSPAERO → DUST → OpenFOAM, con validación contra un caso publicado y estudio de convergencia de malla. Detalle en `docs/aerodinamica.md`.
+- **Por qué:** cada escalón controla al siguiente; el CFD solo vale si está validado.
+
 ## 30/10/2026: herramientas instaladas y repositorio
 
 - **Decisión:** XFLR5, OpenVSP y Blender instalados en la PC. Fusion 360 disponible. Repositorio `evtol-project` creado, separado de Volar 2050.
